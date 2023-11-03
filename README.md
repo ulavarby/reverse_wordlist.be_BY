@@ -6,7 +6,11 @@ Source wordlist is the "be_BY.dic".
 
 Result reversed dictionary is the "be_BY.reversed.txt" file.
 
+Thanks to the project  [GrammarDB](https://github.com/Belarus/GrammarDB/releases), where the file "slovy-2008.txt" was used as a source dictionary.
+
 ---
+
+## Зваротны беларускі слоўнік
 
 Скрыпт прызначаны для стварэння зваротнага слоўніка беларускай мовы.
 
@@ -15,3 +19,5 @@ Result reversed dictionary is the "be_BY.reversed.txt" file.
 Крынічны вордліст - "be_BY.dic".
 
 Выніковы зваротны слоўнік - "be_BY.reversed.txt".
+
+Вялікая ўдзячнасць праекту [GrammarDB](https://github.com/Belarus/GrammarDB/releases), словазбор якога быў выкарыстаны як крыніца.
