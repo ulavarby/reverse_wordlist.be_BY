@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-#
 
 """
 This script creates a reverse dictionary - a dictionary in which words
