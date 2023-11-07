@@ -19,7 +19,7 @@ def wordlist_align():
     max_word = max(wordlist_prereversed, key=len)
     max_len = len(max_word)
     return max_len
-    
+
 # 1st reverse wordlist
 with open("be_BY.dic", 'r', encoding='utf-8') as file_orig:
     wordlist_prereversed = []
@@ -34,9 +34,10 @@ wordlist_sorted = sorted(wordlist_prereversed, key=locale.strxfrm)
 print('Sort complete')
 
 # Final reverse sorted wordlist
+wordlist_reversed = [reverse_slicing(word).rjust(max_len) for word in wordlist_sorted]
+
+# Write reversed wordlist to file
 with open("be_BY.reversed.txt","w", encoding='utf-8') as file_reversed:
     file_reversed.write(str(wordlist_rows) + ' словаформаў\n')
-    for word in wordlist_sorted:
-        file_reversed.writelines(reverse_slicing(word).rjust(max_len))
+    file_reversed.writelines(wordlist_reversed)
 print('Dictionary Reversed!!!')
-
