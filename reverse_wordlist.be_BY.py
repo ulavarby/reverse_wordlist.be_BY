@@ -22,9 +22,7 @@ def wordlist_align():
 
 # 1st reverse wordlist
 with open("be_BY.dic", 'r', encoding='utf-8') as file_orig:
-    wordlist_prereversed = []
-    for line in file_orig:
-        wordlist_prereversed.append(reverse_slicing(line))
+    wordlist_prereversed = [reverse_slicing(line) for line in file_orig]
 wordlist_rows = len(wordlist_prereversed)
 max_len = wordlist_align()
 print('Prereverse complete')
